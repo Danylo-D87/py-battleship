@@ -9,13 +9,10 @@ class Deck:
 
 
 class Ship:
-    def __init__(self,
-                 start: tuple,
-                 end: tuple,
-                 is_drowned: bool = False) -> None:
+    def __init__(self, start: tuple, end: tuple) -> None:
         self.start = start
         self.end = end
-        self.is_drowned = is_drowned  # Присвоюємо значення параметра
+        self.is_drowned = False  # За замовчуванням це завжди False
         self.decks = []
         if start[0] == end[0]:
             row = start[0]
