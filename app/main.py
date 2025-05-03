@@ -15,7 +15,7 @@ class Ship:
                  is_drowned: bool = False) -> None:
         self.start = start
         self.end = end
-        self.is_drowned = False
+        self.is_drowned = is_drowned  # Присвоюємо значення параметра
         self.decks = []
         if start[0] == end[0]:
             row = start[0]
